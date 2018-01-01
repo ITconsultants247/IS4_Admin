@@ -1,0 +1,9 @@
+﻿{
+  "RootNamespace": "IS4_Admin",
+  "ServerTypings": {
+    "Assemblies": []
+  },
+  "Connections": [],
+  "BaseRowClasses": [],
+  "RemoveForeignFields": []
+}
