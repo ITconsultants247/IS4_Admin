@@ -427,6 +427,25 @@ namespace MVC
             {
                 public const string ContactIndex = "~/Modules/Organization/Contact/ContactIndex.cshtml";
             }
+
+        }
+
+        public static class SA_Authorization
+        {
+            public static class Roles
+            {
+                public const string RolesIndex = "~/Modules/SA_Authorization/Roles/RolesIndex.cshtml";
+            }
+
+            public static class UserRoles
+            {
+                public const string UserRolesIndex = "~/Modules/SA_Authorization/UserRoles/UserRolesIndex.cshtml";
+            }
+
+            public static class Users
+            {
+                public const string UsersIndex = "~/Modules/SA_Authorization/Users/UsersIndex.cshtml";
+            }
         }
 
         public static class Shared

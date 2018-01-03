@@ -1,9 +1,41 @@
-﻿{
+{
   "RootNamespace": "IS4_Admin",
   "ServerTypings": {
     "Assemblies": []
   },
-  "Connections": [],
+  "Connections": [
+    {
+      "Key": "IdentityServer",
+      "Tables": [
+        {
+          "Tablename": "dbo.AspNetRoles",
+          "Identifier": "Roles",
+          "Module": "SA_Authorization",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.AspNetUserRoles",
+          "Identifier": "UserRoles",
+          "Module": "SA_Authorization",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.AspNetUsers",
+          "Identifier": "Users",
+          "Module": "SA_Authorization",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Clients",
+          "Identifier": "Clients",
+          "Module": "IdentityServer_Clients",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    }
+  ],
   "BaseRowClasses": [],
-  "RemoveForeignFields": []
+  "RemoveForeignFields": [],
+  "CustomGenerate": {},
+  "CustomSettings": {}
 }

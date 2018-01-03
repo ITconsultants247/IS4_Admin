@@ -11,6 +11,14 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\**\*.sql" Exclude="bin\**;obj\**;**\*.xproj;packages\**;@(EmbeddedResource)" />
+    <Compile Remove="Modules\Authorization\**" />
+    <Compile Remove="Modules\IdentityServer_Clients\**" />
+    <Content Remove="Modules\Authorization\**" />
+    <Content Remove="Modules\IdentityServer_Clients\**" />
+    <EmbeddedResource Remove="Modules\Authorization\**" />
+    <EmbeddedResource Remove="Modules\IdentityServer_Clients\**" />
+    <None Remove="Modules\Authorization\**" />
+    <None Remove="Modules\IdentityServer_Clients\**" />
     <None Update="wwwroot\**\*">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </None>
